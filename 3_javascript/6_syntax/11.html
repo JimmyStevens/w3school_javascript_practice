@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+
+        <h2>JavaScript is Case Sensitive</h2>
+
+        <p>Try to change lastName to lastname.</p>
+
+        <p id="demo"></p>
+
+        <button type="button" onclick="myFunction()">Change Name</button>
+
+        <script>
+
+            var lastname, lastName;
+
+            lastName = "Doe";
+
+            lastname = "Peterson";
+
+            document.getElementById("demo").innerHTML = lastName;
+
+            function myFunction(){
+                document.getElementById("demo").innerHTML = lastname;
+            }
+
+        </script>
+    </body>
+</html>
